@@ -1,0 +1,3 @@
+/opt/project/fork/CMakeFiles/rebuild_cache.dir
+/opt/project/fork/CMakeFiles/edit_cache.dir
+/opt/project/fork/CMakeFiles/stardraw_forklift.dir

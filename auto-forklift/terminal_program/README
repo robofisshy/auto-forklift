@@ -1,0 +1,13 @@
+终端程序主要负责路径规划及插补、任务接收调度、叉车状态显示
+---Terminal 单机版终端程序，主要有Communication、Map、Terminal 三个类
+	Communication 通讯类，基于TCP/IP，由一个接收线程和一个发送线程构成
+	Terminal      终端类，一个任务接收线程，调用Map类的方法进行路径规划
+	Map	      地图类，最重要的类。基于boost graph lib建图，使用dijkstra方法进行路径规划并进行轨迹插补
+	include/Map/parameters.txt 为实际地图的节点、边的信息
+
+---Terminal_multiFork 多机版终端程序，调试ing
+	主要对Terminal程序进行部分重构，将Communication类分成Listener和Socket
+	Listener中监听线程使用accept阻塞监听是否有叉车连接，若有连接实例化Socket对象，开启一接收和一发送两个线程
+	在路径规划过程中使用动态时间窗的概念对冲突路径进行判断
+
+	

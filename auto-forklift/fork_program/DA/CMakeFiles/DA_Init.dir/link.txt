@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -std=c++11   CMakeFiles/DA_Init.dir/main.cpp.o CMakeFiles/DA_Init.dir/jetsonGPIO.cpp.o CMakeFiles/DA_Init.dir/motorControl.cpp.o  -o DA_Init 
