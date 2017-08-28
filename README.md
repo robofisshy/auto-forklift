@@ -11,7 +11,7 @@ Software architecture
 fork_program  
 ----DA_Init   Initialization shell  
 ----fork  
-      -----location         visual location code  
+      -----location           visual location code  
       -----multi_thread     multi thread control  
       -----motor_control    velocity smooth and motion track  
       -----detect           sensor state process  
