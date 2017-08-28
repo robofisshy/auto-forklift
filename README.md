@@ -4,11 +4,11 @@ The localization and control system run on Jetson TX1 made by Nvidia.
 The path planning and dispatching system run on terminal---a common pc,communicate with TX1 by wifi.
 The ensor data processing system run on Arduino, communicate with TX1 by I2C bus.
 
-Terminal<----->TX1<----->Arduino
+##Terminal<----->TX1<----->Arduino
 -------------------------------------------------------------------------------------------------------
-Software architecture  
+###Software architecture  
 
-fork_program  
+####fork_program  
 ----DA_Init   Initialization shell  
 ----fork  
       -----location         visual location code  
@@ -17,7 +17,7 @@ fork_program
       -----detect           sensor state process  
       -----forklift         program entry  
       -----utils            some little tools  
-terminal_program  
+####terminal_program  
 ----Terminal  
       -----Map              map building,path plan and interpolation(based on Boost Graph Library)  
       -----Communication    socket send and receive thread  
