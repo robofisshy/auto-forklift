@@ -9,7 +9,7 @@ The ensor data processing system run on Arduino, communicate with TX1 by I2C bus
 ## Software architecture  
 
 ### fork_program  
-----DA_Init                   Initialization shell  
+----DA_Init&ensp&ensp&ensp&ensp&ensp&ensp&enspInitialization shell  
 ----fork  
       -----location           visual location code  
       -----multi_thread     multi thread control  
